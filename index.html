@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling Tourism</title>
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .banner {
+            background-color: #583b80;
+            color: white;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .tabs a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tabs a:hover {
+            text-decoration: underline;
+        }
+        .title-card {
+            background-color: #F3F4F6;
+            padding: 32px;
+            border-radius: 3px;
+            transition: opacity 0.3s ease-in-out;
+            margin-top: 12px;
+        }
+
+        .title-card:hover {
+            opacity: 0.8;
+        }
+
+        /* Carousel styles */
+        .glide__slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        
+        .full-image {
+            background-image: url('./hills.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 40px; 
+            color: white;
+            font-weight: bold;
+            z-index: 9999;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.title-card {
+  width: 100%;
+  background-color: #ccc;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+    <header class="banner">
+        <div class="logo">darjeeling.org</div> 
+        <nav class="tabs flex gap-4">
+            <a href="#" class="hover:underline">Destinations</a>
+            <a href="#" class="hover:underline">Contact</a>
+            <a href="#" class="hover:underline">Info</a>
+            <a href="#" class="hover:underline">More</a>
+        </nav>
+    </header>
+
+    <div class="full-image">
+        <div class="content">
+            <h1>Explore the Queen of hills</h1>
+            
+        </div>
+    </div>
+ 
+    <div class="grid">
+        <div class="title-card">
+            <img src="Lamahata.jpeg" alt="Image 1" class="w-full h-auto object-cover mb-2">
+                <h3 class="text-lg font-semibold mb-2">Lamahata</h3>
+                <p>Land of the monks</p>
+                <p class="text-sm text-gray-500">ecsape to the serene views of the pine covered hills</p>
+
+        </div>
+        <div class="title-card">
+            <img src="images (1).jpeg" alt="Image 1" class="w-full h-auto object-cover mb-2">
+                <h3 class="text-lg font-semibold mb-2">Observatory Hill</h3>
+                <p>Mountain Magnificence</p>
+                <p class="text-sm text-gray-500">Hilltop overlook with sweeping vies of valleys and snow peaks</p>
+
+        </div>
+       <div class="title-card">
+        <img src="Redpanda.jpeg" alt="Image 1" class="w-full h-auto object-cover mb-2">
+        <h3 class="text-lg font-semibold mb-2">Himalayan Zoological Park</h3>
+        <p>Animal Kingdom</p>
+        <p class="text-sm text-gray-500">Meet the red panda, iconic mascot of the Himalayas</p>
+        
+       </div>
+      </div>
+
+        
+        <div class="glide mt-8">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="Darjeeling_.jpeg" alt="Carousel Image 1">
+                        <div class="glide-caption">Darjeeling Tea Fields</div>
+                        <p>A refreshing cup of the finest tea</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="glenarys.jpeg" alt="Carousel Image 2">
+                        <div class="glide-caption">The Glenarys</div>
+                        <p>A peek into the vintage aesthetics and deliciousness</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="tigerhill.jpeg" alt="Carousel Image 3">
+                        <div class="glide-caption">Tiger Hill</div>
+                        <p>A mesmerising sunrise over himalayas</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="pagoda.jpeg" alt="Carousel Image 4">
+                        <div class="glide-caption">Peace Pagoda</div>
+                        <p>Tranquil moments in the Peace Pagoda</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                        
+                    
+    <footer class="footer">
+        <footer class="footer py-8 bg-gray-800">
+            <div class="container mx-auto flex flex-wrap justify-between">
+                <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+                    <h3 class="text-lg font-semibold text-white mb-4">Plan a trip today</h3>
+                    <p class="text-sm  text-white">Immerse yourself in the serene landscapes of the himalayas, in the laps of the hills of darjeeling.The mountains are calling!</p>
+                </div>
+                <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+                    <h3 class="text-lg font-semibold mb-4  text-white">Contact</h3>
+                    <p class="text-sm  text-white">DG Block,Sector 2, Saltlake Kolkata 700091</p>
+                        <a href="#" class="text-white hover:text-gray-300"><p>Phone - 913323585189<p></a>
+                        <a href="#" class="text-white hover:text-gray-300"><p>Mail - visitwestbengal@yahoo.com</p></a>
+                </div>
+                <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+                    <h3 class="text-lg font-semibold mb-4  text-white">Connect</h3>
+                    <div class="flex space-x-4">
+                            <img src="./whatsapp.png.png" alt="WhatsApp" class="h-8 w-8">
+                            <img src="./facebook.png" alt="Facebook" class="h-8 w-8">
+                            <img src="./instagram.png" alt="Instagram" class="h-8 w-8">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+        </ul>
+        <p>2024 Darjeeling Tourism All Rights Reserved</p>
+    </footer>
+    <script src="./glide.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("here")
+      const g = new Glide('.glide')
+      g.mount({ autoplay: true })
+      console.log("there")
+        })
+        
+    </script>
+</body>
+
+</html>
